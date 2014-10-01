@@ -26,21 +26,26 @@ var answer1,
 
     var numitems = pricearray.length;
 
-    var sum = function(){
+    var sum = pricearray.reduce(function(a,b){
 
-              price
+              return a + b
 
-              }
+            }) ;
 
-
+    avgprice = sum / numitems;
 
     answer1 = avgprice;
     console.log(avgprice);
 
 //This is question 2
 
-    c
-c
+    var midrangeitemsfourteen = items.filter(function(miditems) {
+
+                            if (miditems.price >= 14) {
+
+                                    return miditems};
+                                  });
+
     midrangeitems = midrangeitemsfourteen.filter(function(miditems) {
 
                             if (miditems.price <= 18) {
@@ -54,22 +59,17 @@ c
 
 //This is question 3 pound symbol \u00A3
 
-    var curarray = items.filter(function(curitems) {
+curarray = items.filter(function(currency){
 
-                            if (curitems.currency_code == "GBP") {
+                      if (currency.currency_code == "GBP") {
 
-                                    return curitems};
-                                  });
-
-    var curarray = items.map(function(itemprice){
-
-                                      return itemprice.price
-
-                                    });
+                          return currency.price}
+                        });
 
 
     console.log(gbpitems);
     answer3 = gbpitems;
+
 
 //This is question 4
 
@@ -82,6 +82,14 @@ c
     answer5 = eightitems;
 
 //This is question 2
+    var sellmade = items.filter(function(sellmade){
+                            if (sellmade.who_made == "i_did")
+
+                                {return sellmade.who_made}
+
+                              });
+
+    selfmadeitems = sellmade.length;
 
     console.log(selfmadeitems);
     answer6 = selfmadeitems;
