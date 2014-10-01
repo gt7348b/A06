@@ -66,6 +66,11 @@ curarray = items.filter(function(currency){
                           return currency.price}
                         });
 
+gbpitems = curarray.map(function(itemprice){
+
+                                          return itemprice.price
+
+                                        });
 
     console.log(gbpitems);
     answer3 = gbpitems;
