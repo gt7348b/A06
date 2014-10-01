@@ -83,6 +83,20 @@ gbpitems = curarray.map(function(itemprice){
 
 //This is question 5
 
+var matarray = items.filter(function(miditems) {
+
+                            if (miditems.materials.length >= 8) {
+
+                                    return miditems};
+                                  });
+
+/*eightitems = matarray.map(function(itemprice){
+
+                                          return itemprice.description; return itemprice.materials;
+
+                                        }); */
+    eightitems = matarray;                                    
+
     console.log(eightitems);
     answer5 = eightitems;
 
