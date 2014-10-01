@@ -34,8 +34,8 @@ var answer1,
 
     avgprice = sum / numitems;
 
-    answer1 = avgprice;
-    console.log("The average price is $" + avgprice);
+    answer1 = Number(avgprice).toFixed(2);
+    console.log("The average price is $" + Number(avgprice).toFixed(2));
 
 //This is question 2
 
@@ -46,7 +46,7 @@ var answer1,
                                     return miditems};
                                   });
 
-midrangeitemsfourteen.filter(function(miditems) {
+    midrangeitemsfourteen.filter(function(miditems) {
 
                         if (miditems.price <= 18) {
 
@@ -61,8 +61,8 @@ midrangeitemsfourteen.filter(function(miditems) {
                                   });
 
 
-  /*  console.log(midrangeitems);*/
-      answer2 = midrangeitems;
+
+      answer2 = console.log(midrangeitems);
 
 //This is question 3 pound symbol \u00A3
 
@@ -136,12 +136,12 @@ items.filter(function(miditems) {
 
 document.getElementById('answer1').innerHTML = answer1;
 
-document.getElementById('answer1').innerHTML = answer2;
+document.getElementById('answer2').innerHTML = answer2;
 
-document.getElementById('answer1').innerHTML = answer3;
+document.getElementById('answer3').innerHTML = answer3;
 
-document.getElementById('answer1').innerHTML = answer4;
+document.getElementById('answer4').innerHTML = answer4;
 
-document.getElementById('answer1').innerHTML = answer5;
+document.getElementById('answer5').innerHTML = answer5;
 
-document.getElementById('answer1').innerHTML = answer6;
+document.getElementById('answer6').innerHTML = answer6;
