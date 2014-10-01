@@ -78,6 +78,16 @@ gbpitems = curarray.map(function(itemprice){
 
 //This is question 4
 
+  items.forEach(function(mat1){
+
+                        mat1.materials.forEach(function(wood) {
+
+                          if (wood === "wood") {
+                            console.log(mat1.title)}
+
+                            })
+                          });
+
     console.log(wooditems);
     answer4 = wooditems;
 
@@ -95,7 +105,7 @@ var matarray = items.filter(function(miditems) {
                                           return itemprice.description; return itemprice.materials;
 
                                         }); */
-    eightitems = matarray;                                    
+    eightitems = matarray;
 
     console.log(eightitems);
     answer5 = eightitems;
