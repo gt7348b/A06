@@ -35,7 +35,7 @@ var answer1,
     avgprice = sum / numitems;
 
     answer1 = avgprice;
-    console.log(avgprice);
+    console.log("The average price is $" + avgprice);
 
 //This is question 2
 
@@ -46,6 +46,13 @@ var answer1,
                                     return miditems};
                                   });
 
+midrangeitemsfourteen.filter(function(miditems) {
+
+                        if (miditems.price <= 18) {
+
+                                console.log(miditems)};
+                              });
+
     midrangeitems = midrangeitemsfourteen.filter(function(miditems) {
 
                             if (miditems.price <= 18) {
@@ -54,8 +61,8 @@ var answer1,
                                   });
 
 
-    console.log(midrangeitems);
-    answer2 = midrangeitems;
+  /*  console.log(midrangeitems);*/
+      answer2 = midrangeitems;
 
 //This is question 3 pound symbol \u00A3
 
@@ -63,17 +70,17 @@ curarray = items.filter(function(currency){
 
                       if (currency.currency_code == "GBP") {
 
-                          return currency.price}
+                          console.log(currency.title + "costs \u00A3" + currency.price)}
                         });
 
-gbpitems = curarray.map(function(itemprice){
+/*curarray.map(function(itemprice){
 
-                                          return itemprice.price
+                                          console.log()
 
                                         });
 
     console.log(gbpitems);
-    answer3 = gbpitems;
+    answer3 = gbpitems;*/
 
 
 //This is question 4
@@ -93,22 +100,22 @@ gbpitems = curarray.map(function(itemprice){
 
 //This is question 5
 
-var matarray = items.filter(function(miditems) {
+items.filter(function(miditems) {
 
                             if (miditems.materials.length >= 8) {
 
-                                    return miditems};
+                                    console.log(miditems.title + miditems.materials)};
                                   });
 
 /*eightitems = matarray.map(function(itemprice){
 
                                           return itemprice.description; return itemprice.materials;
 
-                                        }); */
+                                        });
     eightitems = matarray;
 
     console.log(eightitems);
-    answer5 = eightitems;
+    answer5 = eightitems;*/
 
 //This is question 2
     var sellmade = items.filter(function(sellmade){
@@ -120,7 +127,7 @@ var matarray = items.filter(function(miditems) {
 
     selfmadeitems = sellmade.length;
 
-    console.log(selfmadeitems);
+    console.log(selfmadeitems + " were made by their sellers");
     answer6 = selfmadeitems;
 
 
