@@ -48,21 +48,21 @@ var answer1,
 
     midrangeitemsfourteen.filter(function(miditems) {
 
-                        if (miditems.price <= 18) {
+                        if (miditems.price < 18) {
 
                                 console.log(miditems)};
                               });
 
     midrangeitems = midrangeitemsfourteen.filter(function(miditems) {
 
-                            if (miditems.price <= 18) {
+                            if (miditems.price < 18) {
 
                                     return miditems};
                                   });
 
 
 
-      answer2 = console.log(midrangeitems);
+      answer2 = midrangeitems;
 
 //This is question 3 pound symbol \u00A3
 
