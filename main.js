@@ -53,16 +53,16 @@ var answer1,
                                 console.log(miditems)};
                               });
 
-    midrangeitems = midrangeitemsfourteen.filter(function(miditems) {
+  /*  midrangeitems = midrangeitemsfourteen.filter(function(miditems) {
 
                             if (miditems.price < 18) {
 
                                     return miditems};
                                   });
 
+*/
 
-
-      answer2 = midrangeitems;
+    //  answer2 = midrangeitems;
 
 //This is question 3 pound symbol \u00A3
 
@@ -119,7 +119,7 @@ items.filter(function(miditems) {
 
 //This is question 2
     var sellmade = items.filter(function(sellmade){
-                            if (sellmade.who_made == "i_did")
+                            if (sellmade.who_made === "i_did")
 
                                 {return sellmade.who_made}
 
